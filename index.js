@@ -1,25 +1,8 @@
 const axios = require('axios')
-const _ = require('lodash')
-const mysql = require('mysql')
-const moment = require('moment')
 const dayjs = require('dayjs')
-const numeral = require('numeral')
-const cookies = require('js-cookie')
-const delay = require('delay')
-var Mailjet = require('node-mailjet').connect('f621b24251d0cc136b13c8a76c2b3c50', '8ff3871442cbc821cfc0f73958b13fa3');
-const notifier = require('node-notifier');
-let httpsProxyAgent = require('https-proxy-agent');
-// var agent = new httpsProxyAgent('http://pr24IxNJ3WDQ:y3W4sICaOxpe@77.121.201.10:9103');
-var agent = new httpsProxyAgent('http://alexwhte:alexwhte@connect4.mproxy.top:10813');
-const randomUseragent = require('random-useragent')
-let Parser = require('rss-parser');
-const htmlparser2 = require("htmlparser2");
-let parser = new Parser();
 let cheerio = require('cheerio');
-const iconv = require('iconv-lite');
 const TelegramBot = require('node-telegram-bot-api')
-const fetch = require('node-fetch');
-// import fetch from 'node-fetch@2';
+
 
 const token = '5262605141:AAGXRSSFiL0vvWY0HuyIXu3A4uT0-dOa7LY'
 
