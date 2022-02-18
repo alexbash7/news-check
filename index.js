@@ -163,14 +163,16 @@ const start = async () => {
       });
 
       if (devtoList.length > 0) {
+        
+        console.log(devtoList.length, news.length)
 
         if (devtoList.length > news.length) {
-          news = devtoList;
+          news = [...devtoList];
 
           bot.sendMessage(chatid, devtoList[0].time + ' ' + devtoList[0].title).catch(e => console.log("in 1", e.message) );
 
         } else if (devtoList.length <= news.length) {
-          news = devtoList;
+          news = [...devtoList];
         }
 
 
