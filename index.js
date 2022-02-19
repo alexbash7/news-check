@@ -155,7 +155,7 @@ const start = async () => {
 
       const $ = cheerio.load(converted); 
       let devtoList = [];
-      $('.article_news_red').each(function(i, elem) {
+      $('.article_news_bold').each(function(i, elem) {
           devtoList[i] = {
               title: $(this).find('a').text().trim(),
               time: $(this).find('.article_time').text().trim()
